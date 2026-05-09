@@ -27,7 +27,7 @@ def getData():
 
 data = getData()
 
-st.header("Taxi fare distribution !!! :)")
+st.header("Taxi fare distribution -  CHAMOS !!! :)")
 col1, col2 = st.columns([3, 1])
 with col1:
     st.scatter_chart(data=data, height=400, width=700, y="fare_amount", x="trip_distance")
