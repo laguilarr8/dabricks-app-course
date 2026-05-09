@@ -38,4 +38,6 @@ with col2:
     d = data[(data['pickup_zip'] == int(pickup)) & (data['dropoff_zip'] == int(dropoff))]
     st.write(f"# **${d['fare_amount'].mean() if len(d) > 0 else 99:.2f}**")
 
+st.title("Dashboard de Ventas")
+st.write("Consulta de datos desde Databricks")
 st.dataframe(data=data, height=600, use_container_width=True)
